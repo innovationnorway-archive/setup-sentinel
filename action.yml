@@ -1,13 +1,13 @@
 name: 'Setup Sentinel'
 description: 'Setup Sentinel and add it to the PATH'
-author: 'volcano-coffee-company'
+author: 'innovationnorway'
 branding:
-  icon: 'clipboard'
-  color: 'gray-dark'
+  icon: 'terminal'
+  color: 'purple'
 inputs: 
   version:
-    description: 'The Sentinel version to download (if necessary) and use. Example: ~> 0.13'
-    default: '0.13'
+    description: 'The Sentinel version to download (if necessary) and use. Example: ~> 0.15'
+    default: '>= 0.15'
 runs:
   using: 'node12'
-  main: 'lib/setup-sentinel.js'
+  main: 'dist/index.js'
