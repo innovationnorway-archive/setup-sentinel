@@ -1,7 +1,7 @@
 # setup-sentinel
 
 <p align="left">
-  <a href="https://github.com/volcano-coffee-company/setup-sentinel"><img alt="GitHub Actions status" src="https://github.com/volcano-coffee-company/setup-sentinel/workflows/Main%20workflow/badge.svg"></a>
+  <a href="https://github.com/innovationnorway/setup-sentinel"><img alt="GitHub Actions status" src="https://github.com/innovationnorway/setup-sentinel/workflows/build-test/badge.svg"></a>
 </p>
 
 This action sets up a [Sentinel](https://www.hashicorp.com/sentinel/) environment for use in actions by:
@@ -15,10 +15,10 @@ See [action.yml](action.yml)
 Basic:
 ```yaml
 steps:
-- uses: actions/checkout@master
-- uses: volcano-coffee-company/setup-sentinel@v1
+- uses: actions/checkout@v2
+- uses: innovationnorway/setup-sentinel@v1
   with:
-    version: '0.13'
+    version: '~0.15'
 - run: sentinel test
 ```
 
